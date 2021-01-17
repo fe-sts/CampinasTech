@@ -6,7 +6,7 @@ soma = 0
 nota = 0
 qtd_notas = 0
 for cont in range(1, 5):
-    nota = int(input('Insira a {}ª nota: '.format(cont)).strip())
+    nota = int(input('Insira a {}ª nota: '.format(cont)).strip()) #Utiliza o contador como numerador
     soma += nota
     qtd_notas += 1
 print('A média aritmética entre as quatro notas é: {}'.format(soma / qtd_notas))
