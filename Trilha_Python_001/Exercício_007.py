@@ -3,9 +3,9 @@
 aleatório de número (de 0 a 100) e dizer se o usuário advinhou)
 '''
 num_usuario = []
-print('-='*30)
+print('-='*60)
 nome = str(input('Digite seu nome: '))
-print('-='*30)
+print('-='*60)
 print('Digite 6 números entre 0 a 100')
 
 for cont1 in range(1,7):
@@ -14,7 +14,7 @@ for cont1 in range(1,7):
         print(f'Entre com número de 0 a 100. Você digitou {num}') #Tratamento para caso digitar um numero maior que 100
     elif num <=100:
         num_usuario.append(num) #Insere o numero digitado no final da lista
-print('*'*30)
+print('*'*60)
 
 
 #Computador vai sortear 6 numeros aleatórios
@@ -23,7 +23,7 @@ num_computador = []
 acertos = []
 num_computador = random.sample((range(0, 100)), 6) #sample seleciona dentro do range de 0 a 100, 6 numeros sem repetição
 print('Os números sorteados pelo computador foram: {}'.format(num_computador))
-print('*'*30)
+print('*'*60)
 
 
 #Compara Numeros inseridos com os Números sorteados pelo computador
@@ -41,4 +41,4 @@ if (len(acertos) == 6):
     print('Os numeros acertados por {} foram: {}'.format(nome, acertos)) #Informa os numeros acertados
 else:
     print('Os numeros acertados por {} foram: {}'.format(nome, acertos)) #Senão, informa os numeros acertados
-print('*'*30)
+print('*'*60)
