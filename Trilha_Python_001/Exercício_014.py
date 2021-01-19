@@ -8,4 +8,4 @@ print('Escolha o livro que quer emprestar: ')
 for cont in range(len(lista_livros)):
     print('[{}] {}'.format(cont + 1, lista_livros[cont]))
 escolha = int(input('--> ').strip())
-print('O livro escolhido foi: {}'.format(lista_livros[escolha]))
+print('O livro escolhido foi: {}'.format(lista_livros[escolha - 1]))
