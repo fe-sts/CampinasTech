@@ -26,6 +26,7 @@ while escolha !=4:
             print('\033[1;33mSua lista de contatos é a seguinte: \033[m')
             for cont in range(len(lista_contatos)):
                 print('[{}] {}'.format(cont + 1, lista_contatos[cont]))
+                print(lista_contatos)
             print('\nEscolha uma nova opção: ')
 
     elif escolha == 2: # ADICIONAR CONTATO
@@ -53,11 +54,3 @@ while escolha !=4:
     elif escolha not in (1, 2, 3, 4):
         print('Opção errada! Escolha uma opção válida!')
 
-'''
-17. Fazer um sistema de Agenda de revisão do Carro (Deve pedir o nome do carro, ano e modelo, 
-nome do proprietário, data e hora da revisão. Depois deve guardar os dados em um dicionário e 
-mostrar a lista de dicionários (agendamentos) na tela)
-
-18. Fazer um sistema de compras (Deve mostrar um dicionário com os objetos (Nome, Preço e Cor), 
-pedir o nome do usuário e fazer com o que o usuário selecione um objeto e imprimir a compra na tela)
-'''
