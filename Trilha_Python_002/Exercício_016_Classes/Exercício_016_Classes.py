@@ -44,7 +44,7 @@ while escolha !=4:
         nome = str(input('Digite o nome do contato: ').strip())
         telefone = int(input('Digite telefone: ').strip())
         endereco = str(input('Digite endereço: ').strip())
-        contato = Contato(nome, telefone, endereco)
+        contato = Contato(nome, telefone, endereco) #INSTÂNCIA  Contato
         lista_contatos.append(contato)
 
     elif escolha == 3: #EXCLUIR CONTATO
@@ -55,7 +55,7 @@ while escolha !=4:
                 print("[{}] Nome: {}\nTelefone: {}\nEndereço: {}".format(cont_exclui + 1, contato.nome, contato.telefone, contato.endereco))
                 cont_exclui += 1
             escolha_exclusao = int(input('\nEscolha o número do contato que quer excluir: ').strip())
-            e = Exclusao(escolha_exclusao, lista_contatos)
+            e = Exclusao(escolha_exclusao, lista_contatos) # INSTÂNCIA Exclusão
             print(e) #Usando Classe (em outro arquivo)
             print(lista_contatos)
             cont_exclui = 0 #RESETA CONTADOR
