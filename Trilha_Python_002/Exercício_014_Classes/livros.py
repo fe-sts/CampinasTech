@@ -13,7 +13,7 @@ class Livros:
     def __init__(self):
         indice = 0 
         for item in lista_livros: #Lista dos livros
-            print(f"{indice + 1} - {item}") #Imprime os livros com os i­ndices
+            print(f"\033[1;33m{indice + 1} - {item}\033[m") #Imprime os livros com os i­ndices
             indice += 1 #Incrementa os indices
 
     def livro_escolhido(escolha):
