@@ -1,9 +1,5 @@
 # Criar um aplicativo Web de IA usando Python, Flask e Serviços Cognitivos do Azure  
 
-```
-Dar exemplos
-```
-
 ## Como executar o projeto:
 
 Crie e ative o ambiente virtual
